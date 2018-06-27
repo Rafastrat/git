@@ -45,6 +45,17 @@ git commit --amend
 git commit --allow-empty -m "some comment"
 ```
 
+# Give name to stash
+```
+git stash save "NAME"
+```
+
+# Retrieve stash by name
+```
+git stash apply stash^{/NAME}
+```
+_Remember that git apply doesn't remove the stash from the stash stack_
+
 
 # Undo published commits with new commits
 
